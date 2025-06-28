@@ -27,18 +27,10 @@
         "pay-result/index",
         "order-list/index",
         "order-detail/index",
-        "apply-service/index",
-        "after-service-list/index",
-        "after-service-detail/index",
         "fill-tracking-no/index",
         "delivery-detail/index",
         "invoice/index"
       ]
-    },
-    {
-      "root": "pages/coupon",
-      "name": "coupon",
-      "pages": ["coupon-list/index", "coupon-detail/index", "coupon-activity-goods/index"]
     },
     {
       "root": "pages/promotion",

@@ -11,11 +11,6 @@ const countsData = [
     name: '积分',
     type: 'point',
   },
-  {
-    num: 10,
-    name: '优惠券',
-    type: 'coupon',
-  },
 ];
 
 const orderTagInfos = [

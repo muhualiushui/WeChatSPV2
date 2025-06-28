@@ -155,8 +155,5 @@ Component({
       this.triggerEvent('goodsclick', { goods });
     },
 
-    gotoCoupons() {
-      wx.navigateTo({ url: '/pages/coupon/coupon-list/index' });
-    },
   },
 });

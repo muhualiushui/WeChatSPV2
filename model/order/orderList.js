@@ -115,7 +115,6 @@ export function genOrders(params) {
           ],
           labelVOs: null,
           invoiceVO: null,
-          couponAmount: null,
           autoCancelTime: '1600352629291',
           orderStatusName: '待付款',
           orderStatusRemark: '需支付￥0.20',

@@ -10,12 +10,6 @@ const menuData = [
       type: 'address',
     },
     {
-      title: '优惠券',
-      tit: '',
-      url: '',
-      type: 'coupon',
-    },
-    {
       title: '积分',
       tit: '',
       url: '',
@@ -66,13 +60,6 @@ const orderTagInfos = [
     iconName: 'comment',
     orderNum: 0,
     tabType: 60,
-    status: 1,
-  },
-  {
-    title: '退款/售后',
-    iconName: 'exchang',
-    orderNum: 0,
-    tabType: 0,
     status: 1,
   },
 ];
@@ -169,10 +156,6 @@ Page({
         });
         break;
       }
-      case 'coupon': {
-        wx.navigateTo({ url: '/pages/coupon/coupon-list/index' });
-        break;
-      }
       default: {
         Toast({
           context: this,
@@ -189,11 +172,7 @@ Page({
   jumpNav(e) {
     const status = e.detail.tabType;
 
-    if (status === 0) {
-      wx.navigateTo({ url: '/pages/order/after-service-list/index' });
-    } else {
-      wx.navigateTo({ url: `/pages/order/order-list/index?status=${status}` });
-    }
+    wx.navigateTo({ url: `/pages/order/order-list/index?status=${status}` });
   },
 
   jumpAllOrder() {
